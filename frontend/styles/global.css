@@ -1,0 +1,126 @@
+/* global.css */
+
+/* Estilos globais */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background: #ecf0f1;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  padding: 1rem;
+  color: #ecf0f1;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-x: auto; /* Barra de rolagem horizontal para o conteúdo */
+  overflow-y: auto; /* Barra de rolagem vertical */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+/* Estilos para as tabelas */
+.table-container {
+  display: block;
+  width: 100%;
+  overflow-x: auto; /* Barra de rolagem horizontal */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* Deixa o navegador decidir a largura */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-overflow: ellipsis;
+  white-space: pre-wrap; /* Permite que o conteúdo quebre em várias linhas */
+  word-wrap: break-word; /* Quebra as palavras longas */
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+  position: sticky; /* Congela os cabeçalhos */
+  top: 0;
+  z-index: 10; /* Garante que os cabeçalhos fiquem acima */
+}
+
+td:nth-child(2), /* Ajuste a segunda coluna (Objeto) */
+td:nth-child(12) { /* Ajuste a décima segunda coluna (Observações) */
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.wrap-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.link-button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  background-color: #2980b9;
+}

@@ -1,0 +1,16 @@
+beautifulsoup4
+pandas
+requests
+urllib3
+tqdm
+zipfile36
+rarfile
+py7zr
+pypdf2
+pdf2docx
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+pikepdf
+concurrent

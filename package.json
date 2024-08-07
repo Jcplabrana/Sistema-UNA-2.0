@@ -1,0 +1,35 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Projeto de licitações com backend e frontend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "dev-backend": "cd backend && nodemon index.js",
+    "dev-frontend": "cd frontend && next dev",
+    "build": "concurrently \"npm run build-backend\" \"npm run build-frontend\"",
+    "build-backend": "cd backend && npm run build",
+    "build-frontend": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.3",
+    "googleapis": "^91.0.0",
+    "helmet": "^4.1.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "next": "14.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-jsx": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "author": "Julio",
+  "license": "ISC"
+}
